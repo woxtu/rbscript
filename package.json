@@ -2,14 +2,27 @@
   "name": "rbscript",
   "private": true,
   "version": "0.0.0",
+  "files": [
+    "./dist"
+  ],
+  "main": "./dist/rbscript.umd.js",
+  "module": "./dist/rbscript.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/rbscript.es.js",
+      "require": "./dist/rbscript.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite src",
     "build": "tsc && vite build",
     "format": "prettier --write src",
     "lint": "eslint src",
-    "preview": "vite preview src"
+    "preview": "vite preview src",
+    "prepare": "npm run build"
   },
   "devDependencies": {
+    "@types/node": "^17.0.36",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "eslint": "^8.15.0",
