@@ -1,7 +1,10 @@
 {
   "name": "rbscript",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
+  "description": "Run Ruby in your HTML",
+  "author": "woxtu <woxtup@gmail.com>",
+  "repository": "woxtu/rbscript",
+  "license": "MIT",
   "files": [
     "./dist"
   ],
