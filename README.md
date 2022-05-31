@@ -1,5 +1,7 @@
 # RbScript
 
+[![npm](https://img.shields.io/npm/v/rbscript.svg?style=flat-square)](https://www.npmjs.com/package/rbscript)
+
 Run Ruby in your HTML.
 
 ```html
@@ -15,7 +17,7 @@ This library is built using [ruby.wasm](https://github.com/ruby/ruby.wasm), and 
 Import the RbScript file to your HTML:
 
 ```html
-<script defer src="rbscript.umd.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/rbscript/dist/rbscript.umd.js"></script>
 ```
 
 ## Feature
