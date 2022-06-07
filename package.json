@@ -1,6 +1,6 @@
 {
   "name": "rbscript",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Run Ruby in your HTML",
   "author": "woxtu <woxtup@gmail.com>",
   "repository": "woxtu/rbscript",
