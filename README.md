@@ -44,7 +44,7 @@ You can specify callback functions using data attributes whose name starts with 
 <button data-rb-onclick="greeting">Hi!</button>
 
 <script type="text/ruby">
-  def greeting
+  def greeting(event)
     puts 'Hi!'
   end
 </script>

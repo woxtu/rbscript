@@ -9,8 +9,8 @@ async function launch(vm: RubyVM): Promise<RubyVM> {
       for (const element of [target, ...target.querySelectorAll<HTMLElement>(`*[data-rb-on${event}]`)]) {
         const method = element.dataset[`rbOn${event}`];
         if (method) {
-          element.addEventListener(event, () => {
-            vm.eval(`send(:${method})`);
+          element.addEventListener(event, (event) => {
+            vm.eval(`method(:${method})`).call("call", vm.wrap(event));
           });
         }
       }
