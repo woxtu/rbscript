@@ -35,6 +35,6 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
-    "ruby-head-wasm-wasi": "^0.3.0-2022-05-18-a"
+    "ruby-head-wasm-wasi": "^0.3.0-2022-06-06-a"
   }
 }
